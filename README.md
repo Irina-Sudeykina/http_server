@@ -21,12 +21,10 @@
  ### class MyServer(BaseHTTPRequestHandler): ###
     """
     Класс для работы с http сервером
+    
+    do_GET(self) - Обработка GET-запросов
+    do_POST(self) - Обработка POST-запросов
     """
-  def do_GET(self):
-        """Обработка GET-запросов"""
-        
-  def do_POST(self):
-        """Обработка POST-запросов"""
     
 """    
 hostName = "localhost"  # Адрес для доступа по сети
