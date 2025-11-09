@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .sticky-sidebar {
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Важно для правильной визуализации */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column h-100">
+      <div class="row flex-grow-1">
+        <div class="col-2 bg-dark sticky-sidebar vh-100">
+            
+            <div class="card text-bg-dark">
+              <div class="card-header">
+                <h5 class="card-title">Меню</h5>
+                <hr class="w-100 border-white">
+              </div>
+            </div>
+          
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white active">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Категории</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Заказы</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Контакты</a>
+                </li>
+            </ul>
+            
+            <!-- Футер -->
+            <hr class="w-100 border-white">
+            <div class="dropdown">
+              <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Пользователь
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Прифиль</a></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
+            
+        </div>
+        
+        <div class="col-10">
+          <!-- Основное содержимое страницы -->
+          <div class="text-center mt-4 mb-4">
+              <h1>Главная</h1>
+              <p class="text-body-secondary">Вы находтесь на сайте, предназначенном для продажи товаров.</p>
+          </div>
+          
+          <div class="row">
+              <div class="col-sm-4 ps-5 pe-5">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Товар 1
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">100$</h3>
+                    <p class="card-text">10 users included? 2 GB of starage. Email support. Help center accss</p>
+                    <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 ps-5 pe-5">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Товар 1
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">100$</h3>
+                    <p class="card-text">10 users included? 2 GB of starage. Email support. Help center accss</p>
+                    <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 ps-5 pe-5">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Товар 1
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">100$</h3>
+                    <p class="card-text">10 users included? 2 GB of starage. Email support. Help center accss</p>
+                    <a href="#" class="btn btn-outline-primary w-100">Купить</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>
