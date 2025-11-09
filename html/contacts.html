@@ -64,19 +64,19 @@
             <div class="col-sm-6 ps-5 pe-5">
                 <div class="card"> 
                     <div class="card-body"> 
-                        <form>
+                        <form action="/" method="POST">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Имя</label>
-                                <input type="text" class="form-control" placeholder="Иван Иванов">
+                                <input type="text" class="form-control" name="username" placeholder="Иван Иванов">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Почта</label>
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
                             </div>
 
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Сообщение</label>
-                                <textarea class="form-control" placeholder="Сообщение" rows="3"></textarea>
+                                <textarea class="form-control" name="text" placeholder="Сообщение" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Отправить</button>
                         </form>
@@ -105,7 +105,9 @@
       </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
